@@ -1,0 +1,11 @@
+﻿namespace app
+{
+    internal class Config
+    {
+        public readonly string DBNAME = "restaurant";
+        public readonly string DBADDR = "localhost";
+        public readonly int DBPORT = 5432;
+        public readonly string USER = "restaurant";
+        public readonly string PASS = "mypass";
+    }
+}

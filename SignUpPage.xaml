@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.SignUpPage"
+             Title="SignUpPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="50"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="logo.png"
+                SemanticProperties.Description="Company logo"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Sign up"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <VerticalStackLayout
+                Spacing="30"
+                Padding="0">
+
+                <VerticalStackLayout
+                    Spacing="5"
+                    Padding="0">
+                    <Label
+                        Text="Username"
+                        SemanticProperties.HeadingLevel="Level2"
+                        SemanticProperties.Description="User login"
+                        FontSize="18"
+                        HorizontalOptions="Center" />
+                    <Entry
+                        WidthRequest="200"
+                        x:Name="Login"
+                    />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout
+                    Spacing="10"
+                    Padding="0">
+                    <Label
+                        Text="Password"
+                        SemanticProperties.HeadingLevel="Level2"
+                        SemanticProperties.Description="User password"
+                        FontSize="18"
+                        HorizontalOptions="Center" />
+                    <Entry
+                        WidthRequest="200"
+                        x:Name="Password"
+                        IsPassword="true"
+                        />
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout
+                >
+                <Button
+                    x:Name="SignupBtn"
+                    Text="Sign up"
+                    SemanticProperties.Hint="Registers a new user"
+                    Clicked="SignUpClick"
+                    HorizontalOptions="Center" />
+                <Button
+                    x:Name="LoginBtn"
+                    Text="Sign in"
+                    SemanticProperties.Hint="Redirects to signin"
+                    Clicked="RedirectSignIn"
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+            
+
+            <Label
+                x:Name="DebugLabel"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
