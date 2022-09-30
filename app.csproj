@@ -48,11 +48,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="DB.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Config.cs.example" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="Npgsql" Version="6.0.7" />
+	  <PackageReference Include="System.Net.Http.Json" Version="7.0.0-rc.1.22426.10" />
 	</ItemGroup>
 
 	<ItemGroup>

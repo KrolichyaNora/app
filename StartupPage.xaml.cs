@@ -12,14 +12,16 @@ public partial class StartupPage : ContentPage
 
 	async private void OnAppearing(object sender, EventArgs e)
 	{
-		int uid = Preferences.Get("user_id", -1);
-		if (uid > 0)
-		{
-			await Shell.Current.GoToAsync("UserInfoPage");
-        }
-		else
-		{
-            await Shell.Current.GoToAsync("SignInPage");
-        }
+		// TODO: See SignInPage.xaml.cs; do the verification here.
+		//int uid = Preferences.Get("user_id", -1);
+		//if (uid > 0)
+		//{
+		//	await Shell.Current.GoToAsync("UserInfoPage");
+		//      }
+		//else
+		//{
+		//          await Shell.Current.GoToAsync("SignInPage");
+		//      }
+		await Shell.Current.GoToAsync("SignInPage");
     }
 }

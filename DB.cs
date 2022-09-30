@@ -1,12 +1,7 @@
 ﻿using Npgsql;
 namespace app
 {
-    interface IStorage
-    {
-        Dictionary<string, string> Register(string login, string password, int role = 1);
-        Dictionary<string, string> Auth(string login, string password);
-    }
-
+    // Not used anymore
     internal class DB: IStorage
     {
         string connString =
